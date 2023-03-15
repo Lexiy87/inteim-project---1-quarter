@@ -29,5 +29,18 @@ void PrintArray(string[] array)
     }
 }
 
+void CheckAndRecord(string[] array, string [] standard)
+{
+    
+    for (int i = 0; i < array.Length; i++)
+    {
+        int check = 3;
+        if (check >= array[i].Length)
+        {
+            standard[i] = array[i];
+        }
+    }
+}
+
 
 
