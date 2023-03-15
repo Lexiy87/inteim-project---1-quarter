@@ -42,5 +42,13 @@ void CheckAndRecord(string[] array, string [] standard)
     }
 }
 
+string[] array = InitArray();
+string []standard = StandardArray();
 
+PrintArray(array);
+System.Console.WriteLine();
+
+CheckAndRecord(array,standard);
+standard = standard.Where(n => !string.IsNullOrEmpty(n)).ToArray();
+PrintArray(standard);
 
